@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="570.0" styleClass="white-form" stylesheets="@CategoryDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryController">
+    <!-- Top section: Header with title -->
+    <top>
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="550.0" spacing="10" styleClass="category-header">
+            <Label layoutX="141.0" styleClass="category-header" stylesheets="@CategoryDesign.css" text="Category Management" textFill="WHITE">
+            <HBox.margin>
+               <Insets top="10.0" />
+            </HBox.margin>
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Label>
+        </HBox>
+    </top>
+    
+    <center>
+        <VBox alignment="CENTER" prefHeight="520.0" prefWidth="570.0" spacing="20" styleClass="category-content-area">
+            <GridPane alignment="CENTER" hgap="10" prefHeight="105.0" prefWidth="479.0" vgap="10">
+                <!-- Form labels and text fields for Category Name and Tariff -->
+                <Label styleClass="category-label" text="Category Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="categoryNameField" styleClass="category-textfield" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                
+                <Label styleClass="category-label" text="Category Tariff:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="categoryTariffField" styleClass="category-textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                
+                <!-- Action buttons: Add, Edit, Delete -->
+                <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                    <Button onAction="#handleInsertCategory" prefHeight="30.0" prefWidth="100.0" styleClass="category-action-btn" text="Add">
+                  <HBox.margin>
+                     <Insets top="40.0" />
+                  </HBox.margin></Button>
+                    <Button onAction="#handleModifyCategory" prefHeight="30.0" prefWidth="100.0" styleClass="category-action-btn" text="Edit">
+                  <HBox.margin>
+                     <Insets top="40.0" />
+                  </HBox.margin></Button>
+                    <Button onAction="#handleDeleteCategory" prefHeight="30.0" prefWidth="100.0" styleClass="category-action-btn" text="Delete">
+                  <HBox.margin>
+                     <Insets top="40.0" />
+                  </HBox.margin></Button>
+                </HBox>
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints maxHeight="36.8" minHeight="3.9999807357788093" prefHeight="31.999981689453126" />
+               <RowConstraints maxHeight="53.60001926422119" minHeight="20.799999999999997" prefHeight="29.60001220703125" />
+               <RowConstraints maxHeight="28.00000610351563" minHeight="8.00000610351563" prefHeight="27.199987792968756" />
+            </rowConstraints>
+            <padding>
+               <Insets top="-20.0" />
+            </padding>
+            </GridPane>
+            
+            <TableView fx:id="categoryTable" prefHeight="200.0" prefWidth="400.0" styleClass="category-table-view">
+                <columns>
+                    <TableColumn fx:id="idColumn" prefWidth="123.1999568939209" text="ID" />
+                    <TableColumn fx:id="libColumn" prefWidth="228.00006103515625" text="Name" />
+                    <TableColumn fx:id="tarifColumn" prefWidth="156.79995727539062" text="Tariff" />
+                </columns>
+            <VBox.margin>
+               <Insets top="40.0" />
+            </VBox.margin>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

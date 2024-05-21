@@ -1,0 +1,90 @@
+.white-form{
+	-fx-background-color:#fff;
+}
+
+.category-header {
+    -fx-background-color: #fff;
+    -fx-padding: 25px;
+    -fx-alignment: center;
+    -fx-text-fill:linear-gradient(to bottom right, #CCBFA3, #737A5D);
+}
+
+.category-content-area {
+    -fx-padding: 20px;
+    -fx-alignment: center;
+    -fx-background-radius: 10px;
+    -fx-background-color:#fff;
+}
+
+.category-table-view {
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 10px;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10px;
+}
+
+
+.category-table-view .column-header, .category-table-view .filler {
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+
+.category-table-view .cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000;
+}
+
+.category-textfield {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #737A5D;
+    -fx-border-width: .9px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.category-textfield:focused {
+    -fx-border-color: #4F7077;
+    -fx-border-width: 1px;
+}
+
+.category-action-btn {
+    -fx-background-color: linear-gradient(to bottom right, #CCBFA3, #737A5D);
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+
+.category-action-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #737A5D, #CCBFA3);
+}
+
+.category-logout-btn {
+    -fx-cursor: hand;
+    -fx-border-color: linear-gradient(to bottom right, #CCBFA3, #737A5D); 
+    -fx-text-fill: white; 
+    -fx-background-color: linear-gradient(to bottom right, #CCBFA3, #737A5D); 
+    -fx-border-width: 1px;
+    -fx-background-radius:5px;
+    -fx-font-size:14px;
+    -fx-font-family:Arial;
+}
+
+.category-logout-btn:hover {
+	-fx-background-color: white; 
+	-fx-text-fill: linear-gradient(to bottom right, #CCBFA3, #737A5D);
+}
+
+.category-footer {
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-background-color:#fff;
+}
+
+.category-label {
+    -fx-text-fill: #999471; 
+    -fx-font-size:20px;
+    -fx-font-family:Arial;
+}

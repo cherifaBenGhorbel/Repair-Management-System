@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CombinedController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="403.0" prefWidth="300.0" styleClass="gradient" stylesheets="@CombinedDesign.css">
+               <children>
+                  <Label layoutX="98.0" layoutY="289.0" text="Create Account" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="40.0" layoutY="328.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" styleClass="signup_btn" stylesheets="@CombinedDesign.css" text="Sign Up" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="120.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/3d-casual-life-serviceman-with-beard-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="72.0" layoutY="221.0" text="Repair Workshop" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="300.0" layoutY="3.0" prefHeight="400.0" prefWidth="300.0" styleClass="white-form" stylesheets="@CombinedDesign.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="53.0" styleClass="head-label" stylesheets="@CombinedDesign.css" text="Login Account" textFill="#0b1957">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="40.0" layoutY="122.0" prefHeight="30.0" prefWidth="220.0" promptText="Email" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <PasswordField layoutX="40.0" layoutY="176.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Button layoutX="40.0" layoutY="234.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@CombinedDesign.css" text="Log In" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="8.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <AnchorPane fx:id="login_form" layoutX="399.2" layoutY="3.0" prefHeight="600.0" prefWidth="401.0" styleClass="white-form" stylesheets="@CombinedDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="399.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="70.0" layoutY="55.0" styleClass="head-label" stylesheets="@CombinedDesign.css" text="Login Account" textFill="#0b1957">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="136.0" styleClass="label1" stylesheets="@CombinedDesign.css" text="User Name">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <TextField fx:id="login_email" layoutX="70.0" layoutY="174.0" prefHeight="40.0" prefWidth="260.0" promptText="UserName" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Label layoutX="70.0" layoutY="233.0" styleClass="label2" stylesheets="@CombinedDesign.css" text="Password">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <PasswordField fx:id="login_password" layoutX="70.0" layoutY="276.0" prefHeight="40.0" prefWidth="260.0" promptText="Password" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Button fx:id="login_Btn" layoutX="70.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleLoginAction" prefHeight="45.0" prefWidth="260.0" styleClass="login-btn" stylesheets="@CombinedDesign.css" text="Log In" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Create_form" prefHeight="600.0" prefWidth="401.0" styleClass="white-form" stylesheets="@CombinedDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="70.0" layoutY="45.0" styleClass="head-label" stylesheets="@CombinedDesign.css" text="Register Account" textFill="#0b1957">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="102.0" styleClass="label1" stylesheets="@CombinedDesign.css" text="Personal Informations">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="151.0" text="Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="create_emailName" layoutX="146.0" layoutY="144.0" prefHeight="35.0" prefWidth="186.0" promptText="Name" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Label layoutX="70.0" layoutY="203.0" text="Adresse">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="create_emailAdresse" layoutX="146.0" layoutY="196.0" prefHeight="35.0" prefWidth="186.0" promptText="Adresse" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Label layoutX="70.0" layoutY="257.0" text="Tel">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="create_emailTel" layoutX="146.0" layoutY="250.0" prefHeight="35.0" prefWidth="186.0" promptText="Telephone Number" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Label layoutX="71.0" layoutY="307.0" styleClass="label2" stylesheets="@CombinedDesign.css" text="Account Informations">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="344.0" text="User Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="create_email" layoutX="70.0" layoutY="377.0" prefHeight="35.0" prefWidth="260.0" promptText="Username" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Label layoutX="70.0" layoutY="421.0" text="Password">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <PasswordField fx:id="create_password" layoutX="70.0" layoutY="453.0" prefHeight="35.0" prefWidth="260.0" promptText="Password" styleClass="textfield" stylesheets="@CombinedDesign.css" />
+                  <Button fx:id="create_Btn" layoutX="70.0" layoutY="509.0" mnemonicParsing="false" onAction="#handleRegisterAndSwitchForm" prefHeight="40.0" prefWidth="260.0" styleClass="login-btn" stylesheets="@CombinedDesign.css" text="Sign Up" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="side_form" prefHeight="600.0" prefWidth="401.0" styleClass="gradient" stylesheets="@CombinedDesign.css">
+               <children>
+                  <ImageView fitHeight="271.0" fitWidth="108.0" layoutX="145.0" layoutY="55.0">
+                     <image>
+                        <Image url="@../../../../../3d-casual-life-serviceman-with-beard-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="103.0" layoutY="345.0" text="Repair Workshop" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="140.0" layoutY="415.0" text="Create Account" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sideCreate_Btn" layoutX="70.0" layoutY="465.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="260.0" styleClass="signup_btn" stylesheets="@CombinedDesign.css" text="Sign Up">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Button fx:id="side_alreadyHave" layoutX="71.0" layoutY="465.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="260.0" styleClass="signup_btn" stylesheets="@CombinedDesign.css" text="Already Have An Account ?" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <ImageView fitHeight="271.0" fitWidth="115.0" layoutX="144.0" layoutY="48.0">
+                     <image>
+                        <Image url="@../../../../../../436662940_991916812316263_1259301875077304988_n.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

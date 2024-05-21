@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="478.0" styleClass="white-form" stylesheets="@../OrdreReparation/OrdreReparationDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFactureController">
+   <children>
+       <TextArea fx:id="factureTextArea" editable="false" layoutX="81.0" layoutY="148.0" prefHeight="303.0" prefWidth="314.0" wrapText="true" />
+       <Button layoutX="133.0" layoutY="494.0" onAction="#handleCloseButton" prefHeight="40.0" prefWidth="210.0" styleClass="login-btn" stylesheets="@../CombinedDesign.css" text="Close" />
+       <Label layoutX="158.0" layoutY="56.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" styleClass="order-header" stylesheets="@../OrdreReparation/OrdreReparationDesign.css" text="Facture Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="75.0" layoutX="60.0" layoutY="35.0">
+         <image>
+            <Image url="@../../../../../../../436105706_25462593000054612_9125777721611938186_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="75.0" layoutX="358.0" layoutY="47.0">
+         <image>
+            <Image url="@../../../../../../../442531655_440375518981712_6754864907308052469_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
